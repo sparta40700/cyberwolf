@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>cyberwolf</title>
+  </head>
+  <body>
+    <section class="banniere" id="banniere">
+      <div class="logo">
+        <img src="./images/3621810-middle.png" alt="logo" />
+      </div>
+      <div class="banniere-text">
+        <h1>cyberwolf</h1>
+        <p>Cyberwolf solution informatique pour entreprise.</p>
+      </div>
+      <div class="banniere_btn">
+        <a href="#"><span></span> nous contacter </a>
+        <a href="#"><span></span> en savoir plus </a>
+      </div>
+    </section>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Nos Services</a>
+          </li>
+          <li>
+            <a href="#">Témoignage</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="btn-menu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <section class="mission-sec">
+      <div class="titre-text">
+        <h1>Qui Sommes Nous ?</h1>
+        <p>Nos différentes missions</p>
+      </div>
+      <div class="mission-boite">
+        <div class="missions">
+          <h1>Développement web</h1>
+          <div class="description">
+            <div class="mission-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="mission-text">
+              <p>
+                Vous avez une entreprise ? Vous cherchez une agence de
+                développement des projets web sur mesure en France ?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="missions">
+          <h1>Cyber-sécurité</h1>
+          <div class="description">
+            <div class="mission-icon">
+              <i class="fa-solid fa-user-secret"></i>
+            </div>
+            <div class="mission-text">
+              <p>
+                La cyberguerre est une réalité à laquelle les entreprises
+                doivent faire face. Ransomware, Phising, DDOS et maintenant Data
+                Wiper ciblent toutes les organisations. Cyberwolf vous propose
+                une suite complète solutions novatrices et performantes adaptées
+                à votre infrastructure pour répondre à tous vos besoins.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="img-mission"></div>
+      </div>
+    </section>
+
+    <script>
+      document.querySelector(".fa-xmark").style.display = "none";
+
+      const btnMenu = document.querySelector(".btn-menu");
+      const navbar = document.querySelector(".navbar");
+
+      btnMenu.onclick = function () {
+        if (navbar.style.right === "-250px") {
+          navbar.style.right = "0";
+          document.querySelector(".fa-xmark").style.display = "";
+          document.querySelector(".fa-bars").style.display = "none";
+        } else {
+          navbar.style.right = "-250px";
+          document.querySelector(".fa-xmark").style.display = "none";
+          document.querySelector(".fa-bars").style.display = "";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.banniere {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1),
+    url(./images/Banniere.jpg);
+  height: 100vh;
+}
+.logo img {
+  width: 10%;
+  margin-top: 10px;
+  top: 4%;
+  left: 10%;
+}
+
+.banniere-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 75px;
+}
+.banniere-text h1 {
+  font-size: 130px;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.banniere-text p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.banniere_btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.banniere_btn a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #efffef;
+  border: 1px solid #efffef;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-in;
+}
+
+.banniere_btn a span {
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.6s ease-in;
+}
+
+.banniere_btn a:hover span {
+  width: 100%;
+}
+
+.banniere_btn a:hover {
+  color: #0676d1;
+}
+
+/* --------------------NAV BAR------------------------------ */
+
+.navbar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background: #0676d1;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0;
+  margin: 20px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-menu {
+  width: 50px;
+  height: 50px;
+  background: #0676d1;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  border: 10px;
+  z-index: 3;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .banniere-text h1 {
+    font-size: 44px;
+    font-family: "lobster", cursive;
+  }
+  .banniere_btn a {
+    display: block;
+    margin: 20px auto;
+  }
+  .banniere {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1),
+      url(./images/Banniere.jpg);
+    height: 80vh;
+  }
+}
+
+.mission-sec {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 70px 0;
+}
+
+titre-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding-top: 75px;
+  margin-bottom: 20px;
+}
+
+titre-text p {
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  color: #0676d1;
+  font-weight: bold;
+  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+titre-text p::after {
+  content: "";
+  background: linear-gradient(#0676d1, #fff);
+  height: 40px;
+  width: 60px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(-10deg);
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+titre-text h1 {
+  position: relative;
+  text-align: center;
+  font-size: 130px;
+  font-family: "Lobster", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.mission-boite {
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.missions-sec {
+  position: relative;
+  flex-basis: 50%;
+}
+/*.img-mission {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1),
+    url(./images/banniere2.jpg);
+  height: 750px;
+  flex-basis: 35%;
+  margin: auto;
+  border-radius: 10px;
+}*/
+
+.missions-sec h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #0676d1;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.mission-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 25px;
+  line-height: 50px;
+  border-radius: 8px;
+  color: #0676d1;
+  /* border: 1px solid #0676d1; */
+}
+
+mission-text p {
+  text-align: initial;
+  padding: 0 20px;
+}
