@@ -12,6 +12,10 @@
     url(./images/Banniere.jpg);
   height: 100vh;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .logo img {
   width: 10%;
@@ -232,4 +236,95 @@ titre-text h1 {
 mission-text p {
   text-align: initial;
   padding: 0 20px;
+}
+
+/* ----------------------SERVICE------------------------------ */
+
+.service {
+  width: 100%;
+  padding: 70px 0;
+  background: #efebce;
+}
+
+.service-boite {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-unique {
+  flex-basis: 48%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+}
+
+.service-unique img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-sur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  opacity: 0;
+  transition: 0.6s ease-in;
+}
+
+.service-unique:hover .text-sur {
+  opacity: 1;
+}
+
+.descrip {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.6s ease-in;
+  opacity: 0;
+}
+
+.service-unique:hover .descrip {
+  opacity: 1;
+  bottom: 40%;
+}
+
+hr {
+  background: #fff;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+
+.descrip p {
+  font-size: 14px;
+}
+
+/* ----------------------responsive------------------------------ */
+
+@media screen and (max-width: 770px) {
+  .service-unique {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .descrip p {
+    font-size: 12px;
+  }
+  hr {
+    margin: 5px auto;
+  }
+  .service-unique:hover .descrip {
+    bottom: 25%;
+  }
 }
