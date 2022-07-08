@@ -358,7 +358,7 @@ footer {
 }
 .bloc footer-service,
 .bloc footer-contact,
-.bloc footer-social {
+.bloc footer-reseaux {
   width: 30%;
   margin-bottom: 20px;
 }
@@ -393,4 +393,13 @@ footer {
 .liste-services a {
   color: #fff;
   text-decoration: none;
+}
+
+.liste-social {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 10px 10px;
 }
