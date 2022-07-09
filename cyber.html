@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="./cyber.css" />
+  <title>Cyber Security</title>
+  <link rel="icon" href="./images/3621810-middle.png" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <body>
+     <div class="navbar">
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="h3">Nos Services</a>
+          </li>
+          <li>
+            <!-- <a href="./temoignages.html">Témoignage</a> -->
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="btn-menu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="presentation">
+      <h3>Nos Domaines d'expertise</h3>
+      <div class="categorie-cyber">
+        <div class="audit">
+            <a href="#">
+            <h4>Audit De Sécurité</h4></a>
+        </div>
+        <div class="CERT">
+            <a href="#">
+            <h4>CERT</h4>
+            </a>
+        </div>
+        <div class="GRC">
+            <a href="#">
+            <h4>GRC</h4>
+            </a>
+        </div>
+        <div class="identity">
+            <a href="#">
+            <h4>Identity</h4></a>
+        </div>
+        <div class="security-operational">
+            <a href="#">
+            <h4>Sécurité Opérationnelle</h4>
+            </a>
+        </div>
+        <div class="formation">
+            <a href="#">
+            <h4>Formation</h4>
+            </a>
+        </div>
+      </div>
+    </div>
+       <footer>
+<div class="footer_container">
+  <div class="bloc footer-service">
+    <h3>Nos Services</h3>
+    <ul class="liste-services">
+      <li>
+        <a href="./developpement.html">Développement web</a>
+      </li>
+      <li>
+        <a href="./cyber.html">Cyber-sécurité</a>
+      </li>
+      <li>
+        <a href="#">Service sur mesure</a>
+      </li>
+  </div>
+  <div class="bloc footer-contact">
+    <h3>Contact</h3>
+    <p>+33 6 78 90 12 34</p>
+    <p>Cyberwolf@gmail.com</p>
+    <p> 10 rue de la paix, 75007 Paris</p>
+    </div>
+  <div class="bloc footer-horaire">
+    <h3>horaires</h3>
+    <ul class="liste-horaire">
+      <li> ✅ Lundi 9h - 18h </li>
+      <li> ✅ Mardi 9h - 18h </li>
+      <li> ✅ Mercredi 9h - 18h </li>
+      <li> ✅ Jeudi 9h - 18h </li>
+      <li> ✅ Vendredi 9h - 18h </li>
+      <li> ❌ Samedi fermé </li>
+      <li> ❌ Dimanche fermé </li>
+    </ul>
+    </div>
+  <div class="bloc footer-reseaux">
+    <h3>Réseaux sociaux</h3>
+    <ul class="liste-social">
+      <li>  <a href="https://www.facebook.com/Cyberwolffrance"> <img src="./images/fb_icon-icons.com_65434.png" alt="facebook">  </a> </li>
+      <li>  <a href="https://twitter.com/valentinmerci16"> <img src="./images/twitter_icon-icons.com_65436.png" alt="twitter">  </a> </li>
+      <li>  <a href="https://github.com/sparta40700/"> <img src="./images/github_icon-icons.com_65450.png" alt="github">  </a> </li>
+      <li>  <a href="https://www.linkedin.com/company/cyberwolffr/"> <img src="./images/linkedin_icon-icons.com_65439.png" alt="linkedin">  </a> </li>
+    </ul>
+    </div>
+
+        </div>
+    </footer>
+        <script>
+      document.querySelector(".fa-xmark").style.display = "none";
+
+      const btnMenu = document.querySelector(".btn-menu");
+      const navbar = document.querySelector(".navbar");
+
+      btnMenu.onclick = function () {
+        if (navbar.style.right === "-250px") {
+          navbar.style.right = "0";
+          document.querySelector(".fa-xmark").style.display = "";
+          document.querySelector(".fa-bars").style.display = "none";
+        } else {
+          navbar.style.right = "-250px";
+          document.querySelector(".fa-xmark").style.display = "none";
+          document.querySelector(".fa-bars").style.display = "";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -365,7 +365,7 @@ footer {
   width: 25%;
   margin: 0 30px;
   flex-basis: 50%;
-  margin-bottom: 50px;
+  /* margin-bottom: 10px; */
 }
 .bloc footer-service,
 .bloc footer-contact,
