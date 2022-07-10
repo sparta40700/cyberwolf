@@ -5,12 +5,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1),
     url(./images/Banniere.jpg);
-  /* width: 100%; */
-  color: #fff;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,7 +44,6 @@ body {
 nav ul li {
   list-style: none;
   padding: 0;
-
   margin: 20px 20px;
 }
 nav ul li a {
@@ -74,10 +73,7 @@ nav ul li a {
   transition: 0.5s ease-in;
   cursor: pointer;
 }
-.btn-menu:hover {
-  background: #fff;
-  color: #0676d1;
-}
+
 .dev-choice {
   display: flex;
   justify-content: space-between;
