@@ -15,34 +15,99 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
+.main-container h1 {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container p {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
 
 .dev-choice {
-  text-align: center;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 25px;
+  width: 100%;
+  padding: 70px 0;
+}
+.dev-choice:hover {
+  cursor: pointer;
 }
 .structure-projet {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  text-decoration: none;
+  flex-basis: 48%;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
 }
+
 .site-vitrine {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  text-decoration: none;
+  flex-basis: 48%;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
 }
 .boutique {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  text-decoration: none;
+  flex-basis: 48%;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
 }
 .visibilité_en_ligne {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  text-decoration: none;
+  flex-basis: 48%;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .aide {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #0676d1);
+  margin-left: 25%;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 40%;
+  text-decoration: none;
+  flex-basis: 48%;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
 }
 /*****************************footer*************************************/
 
