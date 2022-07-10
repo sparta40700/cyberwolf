@@ -10,6 +10,24 @@
     rel="stylesheet"
   />
   <body>
+      <div class="navbar">
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="h3">Nos Services</a>
+          </li>
+          <li>
+            <!-- <a href="./temoignages.html">Témoignage</a> -->
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="main-container">
       <h1>CONSTRUISONS VOTRE AVENIR NUMERIQUE</h1>
       <p>
@@ -25,6 +43,7 @@
           application pour votre entreprise.
         </strong>
       </p>
+     
       <div class="dev-choice">
         <div class="structure-projet">
           <h2>Structure du projet</h2>
@@ -137,5 +156,23 @@
 
         </div>
     </footer>
+    <script>
+      document.querySelector(".fa-xmark").style.display = "none";
+
+      const btnMenu = document.querySelector(".btn-menu");
+      const navbar = document.querySelector(".navbar");
+
+      btnMenu.onclick = function () {
+        if (navbar.style.right === "-250px") {
+          navbar.style.right = "0";
+          document.querySelector(".fa-xmark").style.display = "";
+          document.querySelector(".fa-bars").style.display = "none";
+        } else {
+          navbar.style.right = "-250px";
+          document.querySelector(".fa-xmark").style.display = "none";
+          document.querySelector(".fa-bars").style.display = "";
+        }
+      };
+    </script>
   </body>
 </html>
